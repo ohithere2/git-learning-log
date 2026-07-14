@@ -8,7 +8,7 @@ This file documents the Git undo and recovery tools I've learned.
 - git reset --soft HEAD~1: undo last commit, keep changes staged
 - git reset --mixed HEAD~1: undo last commit, keep changes in working directory (default)
 - git reset --hard HEAD~1: undo last commit and discard all changes (dangerous!)
-- Only use reset on commits that haven't been pushed
+- Only safely use reset on commits that haven't been pushed
 
 
 ## Revert
@@ -39,3 +39,8 @@ This file documents the Git undo and recovery tools I've learned.
 - git bisect good <ref>: mark a known-good commit
 - Git checks out middle commits; you test and mark good/bad
 - git bisect reset: end the session and return to original HEAD
+
+## Collaboration
+
+- Use branches to work in parallel without stepping on each other's changes
+- Pull requests let teammates review your work before merging
