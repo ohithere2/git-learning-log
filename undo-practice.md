@@ -19,6 +19,7 @@ This file documents the Git undo and recovery tools I've learned.
 
 - WRONG: always rebase shared branches to keep history clean
 
+
 ## Reflog
 
 - git reflog: shows everywhere HEAD has pointed (commits, resets, checkouts)
